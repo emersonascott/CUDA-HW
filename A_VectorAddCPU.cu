@@ -18,7 +18,7 @@
 // Include files
 #include <sys/time.h>
 #include <stdio.h>
-#include <stdlib.h> //Add header because we use "malloc", "free", and "abs"
+#include <stdlib.h> //Add header because we use "malloc" and "free"
 #include <math.h> //Add header because we use "fabs"
 
 // Defines
