@@ -268,14 +268,14 @@ __global__ void dotProductGPU(float *a, float *b, float *c)
 }
 
 // Checking to see if anything went wrong in the vector addition.
-bool check(float cpuAnswer, float gpuAnswer, float tolerence)
+bool check(float cpuAnswer, float gpuAnswer, float tolerance)
 {
 	double percentError;
 	
 	percentError = fabs((gpuAnswer - cpuAnswer)/(cpuAnswer))*100.0;
 	printf("\n\n percent error = %lf\n", percentError);
 	
-	if(percentError < Tolerance) 
+	if(percentError < tolerance) 
 	{
 		return(true);
 	}
